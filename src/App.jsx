@@ -27,6 +27,28 @@ function Calculator() {
         <div className="my-5 flex justify-center">
           <button 
             className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick('+')}
+          >+</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick('-')}
+          >-</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick('*')}
+          >*</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick('/')}
+          >/</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick('.')}
+          >.</button>
+        </div>
+        <div className="my-5 flex justify-center">
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
             onClick={() => handleClick(1)}
           >1</button>
           <button 
@@ -37,34 +59,44 @@ function Calculator() {
             className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
             onClick={() => handleClick(3)}
             >3</button>
-          <button 
-            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
-            onClick={() => handleClick('*')}
-          >*</button>
         </div>
         <div className="my-5 flex justify-center">
           <button 
             className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
-            onClick={() => handleClick(0)}
-          >0</button>
+            onClick={() => handleClick(4)}
+          >4</button>
           <button 
             className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
-            onClick={() => handleClick('.')}
-          >.</button>
+            onClick={() => handleClick(5)}
+          >5</button>
           <button 
             className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
-            onClick={() => handleClick('-')}
-          >-</button>
+            onClick={() => handleClick(6)}
+          >6</button>
+        </div>
+         <div className="my-5 flex justify-center">
           <button 
             className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
-            onClick={() => handleClick('+')}
-          >+</button>
+            onClick={() => handleClick(7)}
+          >7</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick(8)}
+          >8</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick(9)}
+          >9</button>
         </div>
         <div className="my-5 flex justify-center">
           <button 
             className="bg-green-500 hover:bg-green-600 text-white font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
             onClick={handleEvaluate}
           >=</button>
+          <button 
+            className="bg-white hover:bg-gray-100 text-purple-700 font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
+            onClick={() => handleClick(0)}
+          >0</button>
           <button 
             className="bg-red-500 hover:bg-red-600 text-white font-medium mx-1 py-2 px-5 rounded-lg transition-colors" 
             onClick={reset}
